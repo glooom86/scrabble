@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrabble Game</title>
+  <link rel="stylesheet" href="/css/board.css">
+</head>
+<body>
+<h1>Scrabble Game</h1>
+
+<div id="game-container">
+  <table id="scrabble-board">
+    <!-- Создание сетки 15x15 -->
+    <tbody>
+    <!-- Цикл строк -->
+    <script>
+      for (let row = 0; row < 15; row++) {
+        document.write('<tr>');
+        for (let col = 0; col < 15; col++) {
+          document.write('<td class="board-cell" id="cell-' + row + '-' + col + '"></td>');
+        }
+        document.write('</tr>');
+      }
+    </script>
+    </tbody>
+  </table>
+
+  <!-- Панель с плитками игрока -->
+  <div id="player-tiles">
+    <h2>Твои фишки</h2>
+    <div id="tiles-container">
+      <!-- Плитки будут добавлены программно -->
+    </div>
+  </div>
+
+  <!-- Кнопки действий -->
+  <div id="controls">
+    <button id="submit-move">Подтвердить ход</button>
+    <button id="shuffle-tiles">Перемешать фишки</button>
+  </div>
+</div>
+
+<script src="/js/board.js"></script>
+</body>
+</html>

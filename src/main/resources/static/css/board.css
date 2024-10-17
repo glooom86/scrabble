@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#scrabble-board {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#scrabble-board td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.board-cell {
+    background-color: #f0f0f0;
+}
+
+#player-tiles {
+    margin-top: 20px;
+}
+
+#tiles-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tile {
+    width: 40px;
+    height: 40px;
+    background-color: #ffcc00;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
